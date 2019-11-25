@@ -6,12 +6,9 @@ const app = express();
 port = 3000
 node_env = 'development'
 
-// Opens up a stdin raw input
-
-
 // Grabs the arguments
-const args = process.argv.slice(2);
-console.log('args   : ', args);
+//const args = process.argv.slice(2);
+//console.log('args   : ', args);
 
 function getContact() {
 
@@ -41,7 +38,7 @@ function sendMessage(contact) {
   // Opens the readline
   readline.question(`Message: `, (message) => {
     message = `${message}`
-    console.log(message)
+
     // Creates the string that runs the applescript
     const script = `tell application "Messages" to send "${message}" to buddy "${contact}"`;
     
