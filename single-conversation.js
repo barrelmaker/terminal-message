@@ -61,7 +61,7 @@ function sendMessage(contact) {
 function test() {
   console.log('test')
 }
-*/
+
 
 module.exports = app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
@@ -74,3 +74,5 @@ module.exports = app.listen(port, () => {
   // Change to have it checking for incoming messages from that contact
   //test()
 });
+*/
+getContact()
