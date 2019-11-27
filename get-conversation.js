@@ -19,8 +19,7 @@ if (os.release().split('.')[0] === "12") { // 12 is 10.8 Mountain Lion, which do
 }
 
 // read the Messages.app sqlite db
-const dbPath = '/Users/cooperleong/Library/Messages/chat.db'
-const db = new sqlite3.Database(dbPath)
+const db = new sqlite3.Database(process.env.DB_PATH)
 
 // Create a screen object and name it.
 var screen = blessed.screen();
